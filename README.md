@@ -1,4 +1,4 @@
-# Multi-Domain Modelica Models of a Thermo-Mechanical Gas Turbine and an Electrical Power System for Integrated Simulation using Modelica Tools
+# Multi-Domain Modelica Models for Gas Turbine Detailed Model Analysis using Modelica, OpenIPSL and ThermoPower
 
 Modelica models presented in a paper of the 2018 American Modelica Conference for the paper "Coalesced Gas Turbine and Power System Modeling and Simulation using Modelica".
 
