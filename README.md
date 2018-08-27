@@ -17,8 +17,9 @@ In Dymola 2019 (or newer), follow the steps below:
 -  Load dependencies:
   -  OpenIPSL Library v1.5.0 - [here](https://github.com/OpenIPSL/OpenIPSL/releases/tag/v1.5.0)
   -  ThermoPower Library v3.1-beta.0 - [here](https://github.com/casella/ThermoPower/releases/tag/v3.1-beta.0)
-- File/Open `./Modelica_Models/package.mo`
-- Set as simulation model: `./ModelicaModels/PowerSystemDomain/Networks/SMIB/NoNoise/OnLoad/SMIB_TurbGov.mo`
+- Inside the folder `Modelica_Models`, there is the `OpenCPS_D53B` folder, copy this to a location of your preference, DO NOT modify the name of the folder.
+- File/Open `./OpenCPS_D53B/package.mo`
+- Set as simulation model: `./OpenCPS_D53B/PowerSystemDomain/Networks/SMIB/NoNoise/OnLoad/SMIB_TurbGov.mo`
 - Simulate the model for 100 sec using DASSL and a tolerance of 0.0001.
 - Plot `./generator/PELEC`, you should obtain the response shown below.
 ![response1](https://github.com/ALSETLab/2018_AmericanModelicaConf_PowerGrid_plus_PowerSystems/blob/master/Results/images/SMIB_TurbGov.png)
