@@ -9,8 +9,11 @@ This repository contains a Modelica Single Machine Infinite Bus (SMIB) Multi-dom
 > Miguel Aguilera, Luigi Vanfretti, Tetiana Bogodorova and Francisco Gómez, "Coalesced Gas Turbine and Power System Modeling and Simulation using Modelica", Proceedings of The American Modelica Conference 2018, Cambridge, MA, United States of America, 2018.
 
 Please see the full paper for the documentation of the models.
+Download the paper from the [American Modelica Conference 2018](https://www.modelica.org/events/modelica2018Americas) website.
+A pre-print is available under `./doc/'.
 
-The repository also provides the Modelica MAT results from the SMIB Power system-only and Multi-Domain models comparison and the Multi-Domain simulation, as discussed in the paper.
+## Sample Results from the Paper
+The repository also provides the Modelica MAT results from the SMIB Power system-only and Multi-Domain models comparison and the Multi-Domain simulation, as discussed in the paper. The results can be found under the `./Results/` folder.
 
 ## Example: How to simulate one of the models?
 In Dymola 2019 (or newer), follow the steps below:
