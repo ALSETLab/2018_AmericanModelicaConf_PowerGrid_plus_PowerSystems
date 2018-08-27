@@ -10,7 +10,7 @@ This repository contains a Modelica Single Machine Infinite Bus (SMIB) Multi-dom
 
 Please see the full paper for the documentation of the models.
 Download the paper from the [American Modelica Conference 2018](https://www.modelica.org/events/modelica2018Americas) website.
-A pre-print is available under `./doc/'.
+A pre-print is available under `./doc/`; note that this is the version submitted for review, and not the final version of the paper, which you can obtain in the website cited above.
 
 ## Sample Results from the Paper
 The repository also provides the Modelica MAT results from the SMIB Power system-only and Multi-Domain models comparison and the Multi-Domain simulation, as discussed in the paper. The results can be found under the `./Results/` folder.
