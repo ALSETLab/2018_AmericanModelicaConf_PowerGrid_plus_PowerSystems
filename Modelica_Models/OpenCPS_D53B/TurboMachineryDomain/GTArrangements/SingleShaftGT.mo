@@ -57,8 +57,12 @@ model SingleShaftGT "Complete Single Shaft Gas Turbine Model From ThermoPower Li
         origin={-50,70},
         extent={{-10,-10},{10,10}},
         rotation=90)));
-  ThermoPower.PowerPlants.HRSG.Components.StateReader_gas stateInletCC(redeclare package Medium = ThermoPower.Media.Air) annotation (Placement(transformation(extent={{-46,90},{-26,110}}, rotation=0)));
-  ThermoPower.PowerPlants.HRSG.Components.StateReader_gas stateOutletCC(redeclare package Medium = ThermoPower.Media.FlueGas)
+  ThermoPower.PowerPlants.HRSG.Components.StateReader_gas stateInletCC(redeclare
+      package                                                                            Medium =
+        ThermoPower.Media.Air)                                                                                           annotation (Placement(transformation(extent={{-46,90},{-26,110}}, rotation=0)));
+  ThermoPower.PowerPlants.HRSG.Components.StateReader_gas stateOutletCC(redeclare
+      package                                                                             Medium =
+        ThermoPower.Media.FlueGas)
     annotation (Placement(transformation(extent={{30,90},{50,110}}, rotation=0)));
   parameter ThermoPower.Units.AbsoluteTemperature comprTdes_in "Compressor inlet design temperature";
   parameter ThermoPower.Units.AbsoluteTemperature turbTdes_in "Turbine inlet design temperature";

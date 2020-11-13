@@ -71,7 +71,8 @@ model SMIB_Gov "Network model with no generator controls"
     Kigov=5,
     Kturb=1.5,
     Wfnl=0.15) annotation (Placement(transformation(extent={{-92,-58},{-120,-30}})));
-  replaceable parameter OpenCPS_D53B.PowerSystemDomain.Networks.SMIB.Records.PF_075 pf_results constrainedby OpenCPS_D53B.PowerSystemDomain.Networks.SMIB.Records.PF_050
+  replaceable parameter OpenCPS_D53B.PowerSystemDomain.Networks.SMIB.Records.PF_075 pf_results constrainedby
+    OpenCPS_D53B.PowerSystemDomain.Networks.SMIB.Records.PF_050
     annotation (Placement(transformation(extent={{-134,50},{-114,70}})));
 equation
   connect(genGroup.pwPin, GEN1.p) annotation (Line(points={{-49,0},{-49,0},{-42,0}}, color={0,0,255}));

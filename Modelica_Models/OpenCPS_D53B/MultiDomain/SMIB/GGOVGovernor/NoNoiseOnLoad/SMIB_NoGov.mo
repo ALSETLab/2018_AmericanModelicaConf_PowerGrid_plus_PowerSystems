@@ -53,7 +53,8 @@ model SMIB_NoGov "Multi-Domain Network model, no generator controls, no governor
     P_0=pf_results.machines.P1_1,
     V_0=pf_results.voltages.V1,
     angle_0=pf_results.voltages.A1) annotation (Placement(transformation(extent={{-70,-10},{-50,10}})));
-  replaceable parameter OpenCPS_D53B.PowerSystemDomain.Networks.SMIB.Records.PF_075 pf_results constrainedby OpenCPS_D53B.PowerSystemDomain.Networks.SMIB.Records.PF_050
+  replaceable parameter OpenCPS_D53B.PowerSystemDomain.Networks.SMIB.Records.PF_075 pf_results constrainedby
+    OpenCPS_D53B.PowerSystemDomain.Networks.SMIB.Records.PF_050
     annotation (Placement(transformation(extent={{-134,50},{-114,70}})));
   Modelica.Blocks.Sources.Constant const(k=0.649458) annotation (Placement(transformation(extent={{-156,0},{-136,20}})));
 equation

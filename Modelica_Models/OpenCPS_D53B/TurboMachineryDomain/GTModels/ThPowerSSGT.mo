@@ -43,7 +43,8 @@ model ThPowerSSGT "Gas Turbine Dynamics based on ThermoPower Example Case"
   Modelica.Blocks.Interfaces.RealInput valvePosition annotation (Placement(transformation(extent={{-214,148},{-194,168}}, rotation=0), iconTransformation(extent={{-214,84},{-192,106}})));
   inner ThermoPower.System system(allowFlowReversal=false) annotation (Placement(transformation(extent={{-2,90},{40,132}})));
   Modelica.Mechanics.Rotational.Interfaces.Flange_a shaft_a annotation (Placement(transformation(extent={{-220,-22},{-180,18}}, rotation=0)));
-  ThermoPower.Gas.SensT SensT1(redeclare package Medium = ThermoPower.Media.FlueGas) annotation (Placement(transformation(extent={{90,48},{128,86}}, rotation=0)));
+  ThermoPower.Gas.SensT SensT1(redeclare package Medium =
+        ThermoPower.Media.FlueGas)                                                   annotation (Placement(transformation(extent={{90,48},{128,86}}, rotation=0)));
   Modelica.Blocks.Continuous.FirstOrder gasFlowActuator(
     k=1,
     T=4,
