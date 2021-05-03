@@ -83,12 +83,16 @@ model Generator_AVR_PSS "Generator + AVR + PSS"
 equation
   connect(gENROU.p, pwPin) annotation (Line(points={{60,0},{60,0},{110,0}}, color={0,0,255}));
   connect(Pm0, gENROU.PMECH0) annotation (Line(points={{80,-106},{80,-88},{92,-88},{92,15},{63,15}}, color={0,0,127}));
-  connect(avr.EFD, gENROU.EFD) annotation (Line(points={{-24.8,-60.4444},{-34,-60.4444},{-40,-60.4444},{-40,-60},{-40,-32},{-40,-15},{-6,-15}}, color={0,0,127}));
-  connect(gENROU.EFD0, avr.EFD0) annotation (Line(points={{63,-15},{76,-15},{76,-70.5556},{8,-70.5556}}, color={0,0,127}));
-  connect(gENROU.ETERM, avr.ECOMP) annotation (Line(points={{63,-9},{82,-9},{82,-60.4444},{8,-60.4444}}, color={0,0,127}));
+  connect(avr.EFD, gENROU.EFD) annotation (Line(points={{-24.8,-60.4444},{-34,
+          -60.4444},{-40,-60.4444},{-40,-60},{-40,-32},{-40,-15},{-6,-15}},                                                                     color={0,0,127}));
+  connect(gENROU.EFD0, avr.EFD0) annotation (Line(points={{63,-15},{76,-15},{76,
+          -70.5556},{8,-70.5556}},                                                                       color={0,0,127}));
+  connect(gENROU.ETERM, avr.ECOMP) annotation (Line(points={{63,-9},{82,-9},{82,
+          -60.4444},{8,-60.4444}},                                                                       color={0,0,127}));
   connect(const.y, avr.VOEL) annotation (Line(points={{-41,-88},{-41,-88},{-2.4,-88},{-2.4,-76}}, color={0,0,127}));
   connect(avr.VUEL, avr.VOEL) annotation (Line(points={{2.4,-76},{2,-76},{2,-88},{-2.4,-88},{-2.4,-76}}, color={0,0,127}));
-  connect(pss.VOTHSG, avr.VOTHSG) annotation (Line(points={{21.4,-44},{14,-44},{14,-53.4444},{8,-53.4444}}, color={0,0,127}));
+  connect(pss.VOTHSG, avr.VOTHSG) annotation (Line(points={{21.4,-44},{14,-44},
+          {14,-53.4444},{8,-53.4444}},                                                                      color={0,0,127}));
   connect(gENROU.PELEC, pss.V_S2) annotation (Line(points={{63,9},{96,9},{96,-46},{60,-46}}, color={0,0,127}));
   connect(Pmech, gENROU.PMECH) annotation (Line(points={{-106,0},{-60,0},{-60,15},{-6,15}}, color={0,0,127}));
   connect(speed, gENROU.SPEED) annotation (Line(points={{106,20},{88,20},{88,21},{63,21}}, color={0,0,127}));

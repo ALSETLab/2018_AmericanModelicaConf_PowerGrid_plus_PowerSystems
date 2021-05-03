@@ -113,18 +113,23 @@ model Generator_AVR_PSS_TurbGov "Generator + AVR + PSS + Turbine + Governor"
 equation
   connect(gENROU.p, pwPin) annotation (Line(points={{60,4},{110,4},{110,0}},color={0,0,255}));
   connect(Pm0, gENROU.PMECH0) annotation (Line(points={{80,-106},{80,-88},{92,-88},{92,19},{63,19}}, color={0,0,127}));
-  connect(avr.EFD, gENROU.EFD) annotation (Line(points={{-24.8,-60.4444},{-34,-60.4444},{-40,-60.4444},{-40,-60},{-40,-32},{-40,-11},{-6,-11}}, color={0,0,127}));
-  connect(gENROU.EFD0, avr.EFD0) annotation (Line(points={{63,-11},{76,-11},{76,-70.5556},{8,-70.5556}}, color={0,0,127}));
-  connect(gENROU.ETERM, avr.ECOMP) annotation (Line(points={{63,-5},{82,-5},{82,-60.4444},{8,-60.4444}}, color={0,0,127}));
+  connect(avr.EFD, gENROU.EFD) annotation (Line(points={{-24.8,-60.4444},{-34,
+          -60.4444},{-40,-60.4444},{-40,-60},{-40,-32},{-40,-11},{-6,-11}},                                                                     color={0,0,127}));
+  connect(gENROU.EFD0, avr.EFD0) annotation (Line(points={{63,-11},{76,-11},{76,
+          -70.5556},{8,-70.5556}},                                                                       color={0,0,127}));
+  connect(gENROU.ETERM, avr.ECOMP) annotation (Line(points={{63,-5},{82,-5},{82,
+          -60.4444},{8,-60.4444}},                                                                       color={0,0,127}));
   connect(const.y, avr.VOEL) annotation (Line(points={{-41,-88},{-41,-88},{-2.4,-88},{-2.4,-76}}, color={0,0,127}));
   connect(avr.VUEL, avr.VOEL) annotation (Line(points={{2.4,-76},{2,-76},{2,-88},{-2.4,-88},{-2.4,-76}}, color={0,0,127}));
-  connect(pss.VOTHSG, avr.VOTHSG) annotation (Line(points={{21.4,-44},{14,-44},{14,-53.4444},{8,-53.4444}}, color={0,0,127}));
+  connect(pss.VOTHSG, avr.VOTHSG) annotation (Line(points={{21.4,-44},{14,-44},
+          {14,-53.4444},{8,-53.4444}},                                                                      color={0,0,127}));
   connect(gENROU.PELEC, pss.V_S2) annotation (Line(points={{63,13},{96,13},{96,-46},{60,-46}}, color={0,0,127}));
   connect(speed, gENROU.SPEED) annotation (Line(points={{106,32},{88,32},{88,25},{63,25}}, color={0,0,127}));
   connect(pss.V_S1, gENROU.SPEED) annotation (Line(points={{60,-42},{88,-42},{88,25},{63,25}}, color={0,0,127}));
   connect(govturb.PMECH, gENROU.PMECH) annotation (Line(points={{-38.5,50},{-20,50},{-20,19},{-6,19}}, color={0,0,127}));
   connect(govturb.SPEED, gENROU.SPEED) annotation (Line(points={{-81.125,73},{-90,73},{-90,88},{80,88},{80,25},{63,25}}, color={0,0,127}));
-  connect(govturb.PELEC, pss.V_S2) annotation (Line(points={{-81.125,49.8571},{-90,49.8571},{-90,-34},{96,-34},{96,-46},{60,-46}}, color={0,0,127}));
+  connect(govturb.PELEC, pss.V_S2) annotation (Line(points={{-81.125,49.8571},{
+          -90,49.8571},{-90,-34},{96,-34},{96,-46},{60,-46}},                                                                      color={0,0,127}));
   annotation (
     Icon(coordinateSystem(preserveAspectRatio=false, extent={{-100,-100},{100,100}}), graphics={
         Ellipse(

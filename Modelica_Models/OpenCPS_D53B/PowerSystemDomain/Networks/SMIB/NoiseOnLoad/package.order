@@ -6,3 +6,5 @@ SMIB_normal_noise
 SMIB_normal_noise_gen_input
 SMIB_normal_noise_gen_input_plusfault
 input_plusfault_variacechange
+SignalB
+SMIB_normal_noise_signalb

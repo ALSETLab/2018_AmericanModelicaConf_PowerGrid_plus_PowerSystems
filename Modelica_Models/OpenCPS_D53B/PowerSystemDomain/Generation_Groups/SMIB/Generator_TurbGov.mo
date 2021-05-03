@@ -85,7 +85,8 @@ equation
   connect(Pm0, gENROU.PMECH0) annotation (Line(points={{60,-106},{60,-74},{86,-74},{86,15},{63,15}}, color={0,0,127}));
   connect(gENROU.SPEED, speed) annotation (Line(points={{63,21},{83.5,21},{83.5,20},{106,20}}, color={0,0,127}));
   connect(gENROU.PELEC, PELEC) annotation (Line(points={{63,9},{94,9},{94,-88}}, color={0,0,127}));
-  connect(govturb.PELEC, PELEC) annotation (Line(points={{-81.125,49.8571},{-90,49.8571},{-90,-52},{94,-52},{94,-88}}, color={0,0,127}));
+  connect(govturb.PELEC, PELEC) annotation (Line(points={{-81.125,49.8571},{-90,
+          49.8571},{-90,-52},{94,-52},{94,-88}},                                                                       color={0,0,127}));
   connect(govturb.SPEED, speed) annotation (Line(points={{-81.125,73},{-90,73},{-90,88},{80,88},{80,22},{83.5,21},{83.5,20},{106,20}}, color={0,0,127}));
   connect(govturb.PMECH, gENROU.PMECH) annotation (Line(points={{-38.5,50},{-20,50},{-20,15},{-6,15}},color={0,0,127}));
   annotation (
