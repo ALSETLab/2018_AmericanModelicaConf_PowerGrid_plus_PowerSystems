@@ -38,7 +38,7 @@ model SMIB_normal_noise_gen_input_plusfault
     angle_0=pf_results.voltages.A1) annotation (Placement(transformation(extent={{-70,-10},{-50,10}})));
   Records.PF_075 pf_results annotation (Placement(transformation(extent={{-76,
             -118},{-56,-98}})));
-  NoiseInjections.WhiteNoiseInjection whiteNoiseInjection(active_sigma=0.01)
+  NoiseInjections.WhiteNoiseInjection whiteNoiseInjection(active_sigma=0.0)
                  annotation (Placement(transformation(extent={{-10,-10},{10,10}},
         rotation=270,
         origin={-150,10})));
@@ -77,8 +77,9 @@ model SMIB_normal_noise_gen_input_plusfault
   OpenIPSL.Electrical.Events.PwFault pwFault(
     R=0.001,
     X=0.001,
-    t1=90,
-    t2=90.08) annotation (Placement(transformation(extent={{-6,-48},{6,-36}})));
+    t1=600,
+    t2=690.08)
+              annotation (Placement(transformation(extent={{-6,-48},{6,-36}})));
 equation
   connect(generator_AVR_PSS_TurbGov_external_pmech.pwPin, GEN1.p)
     annotation (Line(points={{-49,0},{-45.5,0},{-42,0}}, color={0,0,255}));
@@ -114,8 +115,8 @@ equation
           {-6,0}}, color={0,0,255}));
   annotation (
     experiment(
-      StopTime=10,
-      Interval=0.02,
+      StopTime=300,
+      Interval=0.01,
       __Dymola_Algorithm="Dassl"),
     __Dymola_experimentSetupOutput,
     Diagram(coordinateSystem(extent={{-240,-120},{160,40}}), graphics={Text(
